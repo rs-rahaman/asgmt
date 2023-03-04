@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 6</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- heading and data by filter button start-->
+    <div class="heading">
+      <h1 class="text-center">AI Universe Hub</h1>
+    </div>
+    <div class="searchByFilterBtn text-center mb-5">
+      <button id="filterBtn" class="text-center btn btn-danger">
+        search By Filter
+      </button>
+    </div>
+    <!-- heading and data by filter button end-->
+
+    <!-- home page all card  start-->
+    <div id="productContainer" class="card-group d-flex blockMobile"></div>
+    <!-- home page all card  end-->
+
+    <!-- modal start  -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div id="modalBody" class="modal-bod row d-lg-flex d-sm-block"></div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end  -->
+
+    <!-- showMoreButton start-->
+    <div id="showMoreButton" class="showMoreButton text-center mb-5">
+      <button id="seeMoreBtn" class="btn btn-danger text-center showAlldata">
+        see more
+      </button>
+    </div>
+    <!-- showMoreButton end-->
+
+    <!-- spinner start -->
+    <section>
+      <div
+        id="loader"
+        class="d-flex justify-content-center align-items-center d-none"
+        style="height: 500px"
+      >
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </section>
+    <!-- spinner end -->
+
+    <!-- script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
